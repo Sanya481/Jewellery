@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online store selling jewelry">
+  <link rel="preload" href="/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <title>&laquo;Jewellery&raquo;</title>
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+
+        <button class="header__burger burger" type="button">
+          <span class="burger__menu"></span>
+        </button>
+
+        <p class="header__search search">
+          <label class="search__icon">
+            <input class="search__input" type="text" placeholder="Type here to search">
+          </label>
+        </p>
+        <a href="#" class="header__logo logo">
+          <svg class="logo__icon" width="66" height="66">
+            <use xlink:href="img/sprite.svg#main-logo"></use>
+          </svg>
+        </a>
+        <ul class="header__list user-navigation">
+          <li class="user-navigation__item">
+            <a class="user-navigation__link user-navigation__link--login" href="#">Login</a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link user-navigation__link--cart" href="#">Cart
+              <span class="product-count">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#" class="header__cart cart">
+          <svg class="cart__icon" width="20" height="18">
+            <use xlink:href="img/sprite.svg#cart-icon"></use>
+          </svg>
+        </a>
+
+      </div>
+
+      <nav class="header__nav nav">
+
+        <p class="nav__search search-menu">
+          <label class="search-menu__icon">
+            <input class="search-menu__input" type="text">
+          </label>
+        </p>
+
+        <ul class="nav__list site-navigation">
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">What&rsquo;s new</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Chokers</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Rings</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+
+        <ul class="nav__list about-in-menu">
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">About CH</a>
+          </li>
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">Stores & Hours</a>
+          </li>
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <a class="nav__link login-link-menu" href="#">Login</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="intro intro--main-page">
+      <h1 class="visually-hidden">&laquo;Jewellery&raquo;&nbsp;&mdash; online store selling jewelry</h1>
+      <div class="intro__background">
+        <div class="intro__wrapper--main-page wrapper">
+          <p class="intro__title intro__title--main-page">Perfection</p>
+          <p class="intro__subtitle intro__subtitle--main-page">made to be yours</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products products--main-page">
+      <div class="wrapper">
+        <h2 class="products__title title">New In</h2>
+        <div class="products__buttons">
+          <button class="button__prev products__prev--main-page" type="button"></button>
+          <button class="button__next products__next--main-page" type="button"></button>
+        </div>
+        <div class="products__block-link link-container">
+          <a href="catalog.html" class="products__link link">Shop Now</a>
+        </div>
+
+        <div class="products__carousel">
+
+          <ul class="products__list products__list--main-page">
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Necklace with amethyst</h4>
+              <p class="product__price">$ 145</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/purple-gemstone-necklace.jpg" width="270" height="284"
+                  alt="Purple gemstone necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Layered сhoker</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/layered-choker-necklace.jpg" width="270" height="284"
+                  alt="Triangle layered necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Gold chain</h4>
+              <p class="product__price">$ 215</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace.jpg"> -->
+                <img class="product__image" src="img/products/dainty-gold-necklace.jpg" width="270" height="284" alt="">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Galaxy earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/products/galaxy-earrings.jpg"> -->
+                <img class="product__image" src="img/products/galaxy-earrings.jpg" width="270" height="284"
+                  alt="Galaxy earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Double pearl earrings</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/double-pearl-earrings-mobile.jpg"> -->
+                <img class="product__image" src="img/products/double-pearl-earrings.jpg" width="270" height="284"
+                  alt="Double pearl earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Choker with gold bead</h4>
+              <p class="product__price">$ 55</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/black-choker-gold-bead-mobile.jpg"> -->
+                <img class="product__image" src="img/products/black-choker-gold-bead.jpg" width="270" height="284"
+                  alt="Black choker gold bead">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Gold layered necklace</h4>
+              <p class="product__price">$ 155</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/gold-layered-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/gold-layered-necklace.jpg" width="270" height="284"
+                  alt="Gold layered necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Blue gemstone pendant</h4>
+              <p class="product__price">$ 105</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/blue-gemstone-pendant-mobile.jpg"> -->
+                <img class="product__image" src="img/products/blue-gemstone-pendant.jpg" width="270" height="284"
+                  alt="Blue gemstone pendant">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Boho earrings</h4>
+              <p class="product__price">$ 75</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/boho-earrings-mobile.jpg"> -->
+                <img class="product__image" src="img/products/boho-earrings.jpg" width="270" height="284"
+                  alt="Boho earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Gold bird necklace</h4>
+              <p class="product__price">$ 135</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/bird-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/bird-necklace.jpg" width="270" height="284"
+                  alt="Bird necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Black leather choker</h4>
+              <p class="product__price">$ 85</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/black-leather-choker-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/black-leather-choker-necklace.jpg" width="270"
+                  height="284" alt="Black leather choker necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Elephant earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/elephant-earrings-mobile.jpg"> -->
+                <img class="product__image" src="img/products/elephant-earrings.jpg" width="270" height="284"
+                  alt="Elephant earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Threader necklace</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/threader-necklace-closeup-mobile.jpg"> -->
+                <img class="product__image" src="img/products/threader-necklace-closeup.jpg" width="270" height="284"
+                  alt="Threader necklace closeup">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Origami crane necklace</h4>
+              <p class="product__price">$ 105</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/origami-crane-necklace-mobile.jpg"> -->
+                <img class="product__image" src="img/products/origami-crane-necklace.jpg" width="270" height="284"
+                  alt="Origami crane necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--main-page product">
+              <h4 class="product__title">Marble earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/marble-earrings-mobile.jpg"> -->
+                <img class="product__image" src="img/products/marble-earrings.jpg" width="270" height="284"
+                  alt="Marble-earrings">
+              <!-- </picture> -->
+            </li>
+          </ul>
+        </div>
+
+        <ul class="products__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__page">
+            <a href="#" class="breadcrumbs__number breadcrumbs__number--active">1</a>
+          </li>
+          <li class="breadcrumbs__page">
+            <a href="#" class="breadcrumbs__number">2</a>
+          </li>
+          <li class="breadcrumbs__page">
+            <a href="#" class="breadcrumbs__number">3</a>
+          </li>
+          <li class="breadcrumbs__page breadcrumbs__page--tablet">
+            <a href="#" class="breadcrumbs__number">4</a>
+          </li>
+          <li class="breadcrumbs__page breadcrumbs__page--tablet">
+            <a href="#" class="breadcrumbs__number">5</a>
+          </li>
+          <li class="breadcrumbs__page breadcrumbs__page--tablet">
+            <a href="#" class="breadcrumbs__number">6</a>
+          </li>
+          <li class="breadcrumbs__page breadcrumbs__page--tablet">
+            <a href="#" class="breadcrumbs__number">7</a>
+          </li>
+          <li class="breadcrumbs__page breadcrumbs__page--tablet">
+            <a href="#" class="breadcrumbs__number">8</a>
+          </li>
+        </ul>
+
+        <div class="products__breadcrumbs-mobile">
+          <span class="products__show"></span>of<span class="products__count"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="wrapper">
+        <h2 class="blog__title title">Blog</h2>
+        <div class="blog__block-link link-container">
+          <a href="#" class="blog__link link">Read All</a>
+        </div>
+        <ul class="blog__list">
+          <li class="blog__article article">
+            <div class="article__block article__block--1">
+              <h3 class="article__title">How to care for your jewellery</h3>
+              <p class="article__date">September 30, 2019</p>
+              <a href="#" class="article__link link">Read Article</a>
+            </div>
+            <picture>
+              <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/blog-picture/picture-1-mobile.jpg">
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/blog-picture/picture-1-tablet.jpg">
+              <img class="article__image" src="img/blog-picture/picture-1.jpg" width="285" height="300"
+                alt="Everyday Jewelry">
+            </picture>
+          </li>
+          <li class="blog__article article">
+            <div class="article__block article__block--2">
+              <h3 class="article__title">Power of
+                crystals</h3>
+              <p class="article__date">September 23, 2019</p>
+              <a href="#" class="article__link link">Read Article</a>
+            </div>
+            <picture>
+              <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/blog-picture/picture-2-mobile.jpg">
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/blog-picture/picture-2-tablet.jpg">
+              <img class="article__image" src="img/blog-picture/picture-2.jpg" width="285" height="300"
+                alt="Pair of sea shell and gold coin earrings">
+            </picture>
+          </li>
+          <li class="blog__article article article--big">
+            <div class="article__block article__block--big">
+              <h3 class="article__title">AW 19 trends</h3>
+              <p class="article__date">September 16, 2019</p>
+              <a href="#" class="article__link link">Read Article</a>
+            </div>
+            <picture>
+              <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/blog-picture/picture-3-mobile.jpg">
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="img/blog-picture/picture-3-tablet.jpg">
+              <img class="article__image article__image--big" src="img/blog-picture/big-picture-1.jpg" width="570"
+                height="630" alt="Jewelry on the hands of a girl">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="wrapper">
+        <h2 class="faq__title title">Frequently asked questions</h2>
+
+        <dl class="faq__list">
+
+          <div class="faq__block">
+            <dt class="faq__head">
+              <button class="faq__question" type="button">What materials are the jewellery made of?</button>
+            </dt>
+
+            <dd class="faq__body">
+              <div class="faq__answer">
+                <p class="faq__text">Our jewellery is made of solid gold, silver or leather. Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals.</p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__block">
+            <dt class="faq__head">
+              <button class="faq__question" type="button">Which countries do you deliver to?</button>
+            </dt>
+
+            <dd class="faq__body">
+              <div class="faq__answer">
+                <p class="faq__text">Our jewellery is made of solid gold, silver or leather. Also, some
+                  jewellery contains precious and semiprecious stones and crystals. Our jewellery is made of solid gold,
+                  silver or leather.
+                  Also, some jewellery contains precious and semiprecious stones and crystals. Our jewellery is made of
+                  solid gold, silver or leather.
+                  Also, some jewellery contains precious and semiprecious stones and crystals. Our jewellery is made of
+                  solid gold, silver or leather.
+                  Also, some jewellery contains precious and semiprecious stones and crystals. Our jewellery is made of
+                  solid gold, silver or leather.
+                  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__block">
+            <dt class="faq__head">
+              <button class="faq__question" type="button">What are the payment methods?</button>
+            </dt>
+
+            <dd class="faq__body">
+              <div class="faq__answer">
+                <p class="faq__text">Our jewellery is made of solid gold, silver or leather. Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals.</p>
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__block">
+            <dt class="faq__head">
+              <button class="faq__question" type="button">Can I&nbsp;return the jewellery if&nbsp;it&nbsp;didn&rsquo;t
+                fit&nbsp;me?</button>
+            </dt>
+
+            <dd class="faq__body">
+              <div class="faq__answer">
+                <p class="faq__text">Our jewellery is made of solid gold, silver or leather. Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals. Our jewellery is made of solid gold, silver or leather.
+                  Also, some
+                  jewellery contains
+                  precious and semiprecious stones and crystals.</p>
+              </div>
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Photos from social networks</h2>
+        <p class="gallery__title title"><span class="dog">@</span>Chjewellery</p>
+        <div class="gallery__block-link link-container">
+          <a href="#" class="gallery__link link">Follow Us</a>
+        </div>
+        <div class="gallery__block">
+          <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/social-media-photo/photo-1-tablet.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/photo-1-tablet.jpg">
+            <img class="gallery__photo" src="img/social-media-photo/photo-1.jpg" width="230" height="230"
+              alt="Pair of earrings and cufflinks">
+          </picture>
+          <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/social-media-photo/big-photo-1-mobile.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/big-photo-1-tablet.jpg">
+            <img class="gallery__photo--big" src="img/social-media-photo/big-photo-1.jpg" width="399" height="412"
+              alt="Earrings in the girl's ears">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/photo-2-tablet.jpg">
+            <img class="gallery__photo hide" src="img/social-media-photo/photo-2.jpg" width="230" height="230"
+              alt="Bracelet and ring on a girl">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/photo-3-tablet.jpg">
+            <img class="gallery__photo hide" src="img/social-media-photo/photo-3.jpg" width="230" height="230"
+              alt="Pair of gold earrings">
+          </picture>
+          <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/social-media-photo/small-photo-1-tablet.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/small-photo-1-tablet.jpg">
+            <img class="gallery__photo--small" src="img/social-media-photo/small-photo-1.jpg" width="230" height="150"
+              alt="Earring set">
+          </picture>
+          <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/social-media-photo/small-photo-2-tablet.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/small-photo-2-tablet.jpg">
+            <img class="gallery__photo--small" src="img/social-media-photo/small-photo-2.jpg" width="230" height="150"
+              alt="A set of decorations on the table">
+          </picture>
+          <picture>
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/social-media-photo/small-photo-3-tablet.jpg">
+            <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/social-media-photo/small-photo-3-tablet.jpg">
+            <img class="gallery__photo--small" src="img/social-media-photo/small-photo-3.jpg" width="230" height="150"
+              alt="Rings on the girl's hands">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__subscription subscription">
+        <p class="subscription__title">The good stuff in your inbox</p>
+        <p class="subscription__subtitle">News and updates from CH. No spam, we promise.</p>
+        <p class="subscription__field">
+          <input class="subscription__input" type="email" placeholder="Your E-mail">
+          <a href="#" class="subscription__link">Sign Up</a>
+        </p>
+      </div>
+      <ul class="footer__list ordering">
+        <li class="footer__item"><a class="footer__link" href="#">Ordering & Payment</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Returns & Exchanges</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Delivery</a></li>
+      </ul>
+      <ul class="footer__list about">
+        <li class="footer__item"><a class="footer__link" href="#">About CH</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Stores & Hours</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Jobs</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+      </ul>
+      <ul class="footer__list social">
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--facebook" href="#">Facebook</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="12" height="21">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--instagram" href="#">Instagram</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="21">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--pinterest" href="#">Pinterest</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="21">
+              <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--twitter" href="#">Twitter</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="18">
+              <use xlink:href="img/sprite.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="modal-login">
+    <!-- <img src="img/background/modal-login.jpg" width="430" height="138" alt="Earrings in a gift box"> -->
+    <h2 class="modal-login__title title">Log In</h2>
+    <form method="post" class="modal-login__form">
+      <p class="modal-login__form-group">
+        <input class="modal-login__input modal-login__input--mail" type="email" name="user-mail" placeholder=" ">
+        <label class="modal-login__label">Your E-mail</label>
+      </p>
+      <p class="modal-login__form-group">
+        <input class="modal-login__input modal-login__input--password" type="password" name="user-password"
+          placeholder=" ">
+        <label class="modal-login__label">Password</label>
+      </p>
+      <a href="#" class="modal-login__restore">Forgot your password?</a>
+      <button class="modal-login__submit-btn" type="submit">Log In</button>
+    </form>
+    <p class="modal-login__help">Don&rsquo;t have an&nbsp;account?<a href="#" class="modal-login__sign-up">Sign up</a>
+    </p>
+    <button class="modal-login__close-btn" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+
+  <script src="js/burger-menu.js"></script>
+  <script src="js/products-carousel.js"></script>
+  <script src="js/modal-login.js"></script>
+  <script src="js/accordion-faq.js"></script>
+</body>
+
+</html>

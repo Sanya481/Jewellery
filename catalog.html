@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online store selling jewelry">
+  <link rel="preload" href="/fonts/Poppins-Medium.woff2" as="font">
+  <link rel="stylesheet" href="css/nouislider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>&laquo;Jewellery&raquo;</title>
+</head>
+
+<body class="page-body">
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+
+        <button class="header__burger burger" type="button">
+          <span class="burger__menu"></span>
+        </button>
+
+        <p class="header__search search">
+          <label class="search__icon">
+            <input class="search__input" type="text" placeholder="Type here to search">
+          </label>
+        </p>
+        <a href="main-page.html" class="header__logo logo">
+          <svg class="logo__icon" width="66" height="66">
+            <use xlink:href="img/sprite.svg#main-logo"></use>
+          </svg>
+        </a>
+        <ul class="header__list user-navigation">
+          <li class="user-navigation__item">
+            <a class="user-navigation__link user-navigation__link--login" href="#">Login</a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link user-navigation__link--cart" href="#">Cart
+              <span class="product-count">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#" class="header__cart cart">
+          <svg class="cart__icon" width="20" height="18">
+            <use xlink:href="img/sprite.svg#cart-icon"></use>
+          </svg>
+        </a>
+
+      </div>
+
+      <nav class="header__nav nav">
+
+        <p class="nav__search search-menu">
+          <label class="search-menu__icon">
+            <input class="search-menu__input" type="text">
+          </label>
+        </p>
+
+        <ul class="nav__list site-navigation">
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">What&rsquo;s new</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Chokers</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Rings</a>
+          </li>
+          <li class="nav__item site-navigation__item">
+            <a class="nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+
+        <ul class="nav__list about-in-menu">
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">About CH</a>
+          </li>
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">Stores & Hours</a>
+          </li>
+          <li class="nav__item about-in-menu__item">
+            <a class="nav__link about-in-menu__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <a class="nav__link login-link-menu" href="#">Login</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="intro intro--catalog">
+      <h1 class="visually-hidden">&laquo;Jewellery&raquo;&nbsp;&mdash; online store selling jewelry</h1>
+      <div class="intro__background">
+        <div class="wrapper intro__wrapper--catalog">
+          <p class="intro__title intro__title--catalog">All jewellery</p>
+          <p class="intro__subtitle intro__subtitle--catalog">Discover picks of&nbsp;fashion&rsquo;s finest
+            trends in&nbsp;our jewellery catalog</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Разметка оставляет желать лучшего!!! -->
+    <section class="catalog-inner">
+      <h2 class="visually-hidden">Products catalog</h2>
+      <div class="catalog-inner__wrapper wrapper">
+
+        <button class="catalog-inner__button" type="button">Filter</button>
+
+        <div class="catalog-inner__filters filters">
+          <h2 class="visually-hidden">Filter products</h2>
+          <form class="filters__form" action="#" method="post">
+
+            <fieldset class="filters__block filter-product">
+              <!-- Не уверен какой тег здесь будет семантичней и нужно ли оборачивать загаловок в button-->
+
+              <button class="filter-product__title" type="button">Product</button>
+
+              <ul class="filter-product__list">
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="product-1" type="checkbox" name="Necklaces"
+                    checked>
+                  <label class="filter-product__label" for="product-1">Necklaces</label>
+                </li>
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="product-2" type="checkbox" name="Chokers"
+                    checked>
+                  <label class="filter-product__label" for="product-2">Chokers</label>
+                </li>
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="product-3" type="checkbox" name="Rings">
+                  <label class="filter-product__label" for="product-3">Rings</label>
+                </li>
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="product-4" type="checkbox" name="Earrings"
+                    checked>
+                  <label class="filter-product__label" for="product-4">Earrings</label>
+                </li>
+              </ul>
+
+            </fieldset>
+
+            <fieldset class="filters__block filter-product">
+              <!-- Не уверен какой тег здесь будет семантичней и нужно ли оборачивать загаловок в button-->
+
+              <button class="filter-product__title" type="button">Material</button>
+
+              <ul class="filter-product__list">
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="material-1" type="checkbox" name="Gold"
+                    checked>
+                  <label class="filter-product__label" for="material-1">Gold</label>
+                </li>
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="material-2" type="checkbox" name="Silver">
+                  <label class="filter-product__label" for="material-2">Silver</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filters__block filter-product">
+              <!-- Не уверен какой тег здесь будет семантичней и нужно ли оборачивать загаловок в button-->
+
+              <button class="filter-product__title" type="button">Collection</button>
+
+              <ul class="filter-product__list">
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="collection-1" type="checkbox"
+                    name="Pink flamingo">
+                  <label class="filter-product__label" for="collection-1">Pink flamingo</label>
+                </li>
+                <li class="filter-product__item">
+                  <input class="filter-product__input visually-hidden" id="collection-2" type="checkbox" name="Dream"
+                    checked>
+                  <label class="filter-product__label" for="collection-2">Dream</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filters__block filter-product">
+              <!-- Не уверен какой тег здесь будет семантичней и нужно ли оборачивать загаловок в button-->
+
+              <button class="filter-product__title" type="button">Price</button>
+
+              <div class="filters__range"></div>
+            </fieldset>
+
+            <button class="filters__button filters__submit" type="submit">Apply</button>
+            <button class="filters__button filters__reset" type="reset">Clear All</button>
+            <button class="filters__button filters__close" type="button">
+              <span class="visually-hidden">Close filters popup</span>
+            </button>
+
+          </form>
+        </div>
+
+        <div class="catalog-inner__products products">
+
+          <ul class="products__list products__list--catalog">
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Necklace with amethyst</h4>
+              <p class="product__price">$ 145</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/purple-gemstone-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/purple-gemstone-necklace.jpg" width="270"
+                height="284" alt="Purple gemstone necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Layered сhoker</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/layered-choker-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/layered-choker-necklace.jpg" width="270"
+                height="284" alt="Triangle layered necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Gold chain</h4>
+              <p class="product__price">$ 215</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/dainty-gold-necklace.jpg"> -->
+              <img class="product__image-catalog" src="img/products/dainty-gold-necklace.jpg" width="270" height="284"
+                alt="Dainty gold necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Galaxy earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/products/galaxy-earrings.jpg"> -->
+              <img class="product__image-catalog" src="img/products/galaxy-earrings.jpg" width="270" height="284"
+                alt="Galaxy earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Double pearl earrings</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/double-pearl-earrings-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/double-pearl-earrings.jpg" width="270" height="284"
+                alt="Double pearl earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Choker with gold bead</h4>
+              <p class="product__price">$ 55</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/black-choker-gold-bead-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/black-choker-gold-bead.jpg" width="270" height="284"
+                alt="Black choker gold bead">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Gold layered necklace</h4>
+              <p class="product__price">$ 155</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/gold-layered-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/gold-layered-necklace.jpg" width="270" height="284"
+                alt="Gold layered necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Blue gemstone pendant</h4>
+              <p class="product__price">$ 105</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/blue-gemstone-pendant-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/blue-gemstone-pendant.jpg" width="270" height="284"
+                alt="Blue gemstone pendant">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Boho earrings</h4>
+              <p class="product__price">$ 75</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/boho-earrings-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/boho-earrings.jpg" width="270" height="284"
+                alt="Boho earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Gold bird necklace</h4>
+              <p class="product__price">$ 135</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/bird-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/bird-necklace.jpg" width="270" height="284"
+                alt="Bird necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Black leather choker</h4>
+              <p class="product__price">$ 85</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/black-leather-choker-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/black-leather-choker-necklace.jpg" width="270"
+                height="284" alt="Black leather choker necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Elephant earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/elephant-earrings-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/elephant-earrings.jpg" width="270" height="284"
+                alt="Elephant earrings">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Threader necklace</h4>
+              <p class="product__price">$ 115</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/threader-necklace-closeup-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/threader-necklace-closeup.jpg" width="270"
+                height="284" alt="Threader necklace closeup">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Origami crane necklace</h4>
+              <p class="product__price">$ 105</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/origami-crane-necklace-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/origami-crane-necklace.jpg" width="270" height="284"
+                alt="Origami crane necklace">
+              <!-- </picture> -->
+            </li>
+            <li class="products__item products__item--catalog product">
+              <h4 class="product__title">Marble earrings</h4>
+              <p class="product__price">$ 95</p>
+              <!-- <picture>
+                <source media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/products/marble-earrings-mobile.jpg"> -->
+              <img class="product__image-catalog" src="img/products/marble-earrings.jpg" width="270" height="284"
+                alt="Marble-earrings">
+              <!-- </picture> -->
+            </li>
+          </ul>
+
+          <div class="products__pagination pagination">
+            <button class="pagination__button-prev button__prev" type="button">Previous</button>
+            <ul class="pagination__breadcrumbs breadcrumbs">
+              <li class="breadcrumbs__page">
+                <a href="#" class="breadcrumbs__number breadcrumbs__number--active">1</a>
+              </li>
+              <li class="breadcrumbs__page">
+                <a href="#" class="breadcrumbs__number">2</a>
+              </li>
+              <li class="breadcrumbs__page">
+                <a href="#" class="breadcrumbs__number">3</a>
+              </li>
+              <li class="breadcrumbs__page">
+                <a href="#" class="breadcrumbs__number">4</a>
+              </li>
+              <li class="breadcrumbs__page">
+                <a href="#" class="breadcrumbs__number">5</a>
+              </li>
+            </ul>
+            <button class="pagination__button-next button__next" type="button">Next</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__subscription subscription">
+        <p class="subscription__title">The good stuff in your inbox</p>
+        <p class="subscription__subtitle">News and updates from CH. No spam, we promise.</p>
+        <p class="subscription__field">
+          <input class="subscription__input" type="email" placeholder="Your E-mail">
+          <a href="#" class="subscription__link">Sign Up</a>
+        </p>
+      </div>
+      <ul class="footer__list ordering">
+        <li class="footer__item"><a class="footer__link" href="#">Ordering & Payment</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Returns & Exchanges</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Delivery</a></li>
+      </ul>
+      <ul class="footer__list about">
+        <li class="footer__item"><a class="footer__link" href="#">About CH</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Stores & Hours</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Jobs</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+      </ul>
+      <ul class="footer__list social">
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--facebook" href="#">Facebook</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="12" height="21">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--instagram" href="#">Instagram</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="21">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--pinterest" href="#">Pinterest</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="21">
+              <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item social__item">
+          <a class="footer__link social__link--twitter" href="#">Twitter</a>
+          <a href="#" class="social__icon-link">
+            <svg class="social__icon" width="20" height="18">
+              <use xlink:href="img/sprite.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="modal-login">
+    <!-- <img src="img/background/modal-login.jpg" width="430" height="138" alt="Earrings in a gift box"> -->
+    <h2 class="modal-login__title title">Log In</h2>
+    <form method="post" class="modal-login__form">
+      <p class="modal-login__form-group">
+        <input class="modal-login__input modal-login__input--mail" type="email" name="user-mail" placeholder=" ">
+        <label class="modal-login__label">Your E-mail</label>
+      </p>
+      <p class="modal-login__form-group">
+        <input class="modal-login__input modal-login__input--password" type="password" name="user-password"
+          placeholder=" ">
+        <label class="modal-login__label">Password</label>
+      </p>
+      <a href="#" class="modal-login__restore">Forgot your password?</a>
+      <button class="modal-login__submit-btn" type="submit">Log In</button>
+    </form>
+    <p class="modal-login__help">Don&rsquo;t have an&nbsp;account?<a href="#" class="modal-login__sign-up">Sign
+        up</a>
+    </p>
+    <button class="modal-login__close-btn" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+
+  <script src="js/burger-menu.js"></script>
+  <script src="js/modal-login.js"></script>
+  <script src="js/accordion-filter.js"></script>
+  <script src="js/filters-range.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="js/filters-popup.js"></script>
+
+</body>
+
+</html>
